@@ -51,7 +51,7 @@ export const currencyReducer = (state: CurrencyState = initialState, action: Cur
             return {
                 ...state,
                 ...action.payload,
-                // clearing values after changing action to avoid calculating issues
+                // clearing values after changing exchange operation to avoid calculating issues
                 amountOfBYN: '',
                 amountOfCurrency: '',
 
